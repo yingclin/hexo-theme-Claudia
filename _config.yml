@@ -13,15 +13,14 @@ widgets:
 
 # social config
 social:
-  zhihu:
-  twitter: /
-  facebook: /
-  linkedin:
-  instagram: /
-  github: haojen
+  twitter: yingclin
+#  facebook: /
+#  linkedin:
+#  instagram: /
+  github: yingclin
 
 user:
-  name: Haojen
+  name: yingclin
   avatar: /images/avatar.jpg
   location: In the dust
   description: May the Force be with you
@@ -30,7 +29,7 @@ user:
 # documents: https://github.com/utterance/utterances
 # API config: https://utteranc.es/
 comment_utteranc:
-  enable: true
+  enable: false
   repo: Haojen/Claudia-theme-blog # your blog repo
 
 
