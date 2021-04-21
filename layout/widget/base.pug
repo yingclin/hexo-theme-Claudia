@@ -1,10 +1,13 @@
-
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
-- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
-- if (is_year()) pageTitle += ': ' + page.year
-- var pageTitle = page.title || theme.user && theme.user.name + "'s blog"
+- var tempTitle = ''
+- if(page.title) tempTitle = page.title
+- if (is_archive()) tempTitle = '歸檔'
+- if (is_tag()) tempTitle = '標籤: ' + page.tag
+- if (is_category()) tempTitle = '分類: ' + page.category
+- if (is_month()) tempTitle += ': ' + page.month + '/' + page.year
+- if (is_year()) tempTitle += ': ' + page.year
+//- var pageTitle = page.title || theme.user && theme.user.name + "'s blog"
+- if(tempTitle != '') tempTitle = ' - ' + tempTitle
+- var pageTitle = config.title + tempTitle
 - var appearance = theme.appearance ? theme.appearance : 'auto'
 
 doctype html
