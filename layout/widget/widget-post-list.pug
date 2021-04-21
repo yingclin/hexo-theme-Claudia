@@ -10,7 +10,7 @@ article.post-container.is-flex.is-justify-content-center.section.container.is-ma
                         - var isExcerpt = post.excerpt && post.excerpt.length > 0
                         - var postContent = isExcerpt ? post.excerpt : post.content
                         article.post-item-card
-                            if imgURL
+                            if imgURL && post.listImg
                                 header.is-relative.is-flex
                                     div.post-cover-backdrop.is-hidden
                                         img(src= imgURL alt="loading..")
