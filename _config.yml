@@ -21,7 +21,7 @@ social:
 
 user:
   name: yingclin
-  avatar: /images/avatar.jpg
+  avatar: # /images/avatar.jpg
   location: In the dust
   description: May the Force be with you
   footnotes: # footnotes

@@ -232,7 +232,7 @@ $coverBlurEffect: 20px;
   .tag-widget {
     > section {
       overflow: auto;
-      max-height: 30vh;
+      // max-height: 30vh;
     }
 
     &.is-in-tag-page > section {
